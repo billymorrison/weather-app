@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
+import LocationDetails from './components/locationdetails'
+import ForecastSummaries from './components/forecastsummaries'
+import PropTypes from 'prop-types'
 
-function App() {
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='forecast'>
+      <LocationDetails 
+        city = { props.location.city }
+        country = { props.location.country }
+      />
+      <ForecastSummaries forecasts={ props.forecasts }/>
     </div>
   );
 }
 
+App.propTypes = {
+  location: PropTypes.shape({
+    city: PropTypes.string,
+    country: PropTypes.string
+  }).isRequired,
+  forecasts: PropTypes.array.isRequired
+}
+
 export default App;
+
+
