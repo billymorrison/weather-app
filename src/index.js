@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { location, forecasts } from './data/forecast.json';
+//import { location, forecasts } from './data/forecast.json';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App location={ location } forecasts={forecasts}/>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

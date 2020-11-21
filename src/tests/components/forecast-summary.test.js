@@ -2,6 +2,10 @@ import React from 'react'
 import { render } from '@testing-library/react'
 import ForecastSummary from '../../components/forecastsummary'
 
+const mockFunction = () => {
+    return
+}
+
 describe('Forecast Summary', () => {
     it('renders correctly', () => {
         const { asFragment } = render(
@@ -10,6 +14,7 @@ describe('Forecast Summary', () => {
                 temperature={68494}
                 description='testDesc'
                 icon='800'
+                onSelect={mockFunction}
             />
         )
 
@@ -23,6 +28,7 @@ describe('Forecast Summary', () => {
                 temperature={9}
                 description='Clear'
                 icon='800'
+                onSelect={mockFunction}
             />
         )
 

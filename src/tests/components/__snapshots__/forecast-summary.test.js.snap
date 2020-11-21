@@ -28,6 +28,9 @@ exports[`Forecast Summary renders correctly 1`] = `
     >
       testDesc
     </span>
+    <button>
+      More Details
+    </button>
   </div>
 </DocumentFragment>
 `;
