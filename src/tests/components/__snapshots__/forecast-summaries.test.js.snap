@@ -12,19 +12,18 @@ exports[`Forecast Summaries renders the correct amount of ForecastSummary compon
         class="date"
         data-testid="date-id"
       >
-        1525046400000
+        April 30th, 2018
       </span>
-      <span
-        class="icon"
-        data-testid="icon-id"
-      >
-        800
-      </span>
+      <i
+        class="wi wi-day-sunny"
+        data-testid="icon-image-id"
+        name="owm"
+      />
       <span
         class="max-temperature"
         data-testid="temperature-id"
       >
-        11
+        11℃
       </span>
       <span
         class="description"
@@ -40,19 +39,18 @@ exports[`Forecast Summaries renders the correct amount of ForecastSummary compon
         class="date"
         data-testid="date-id"
       >
-        1525046400022
+        April 30th, 2018
       </span>
-      <span
-        class="icon"
-        data-testid="icon-id"
-      >
-        900
-      </span>
+      <i
+        class="wi wi-tornado"
+        data-testid="icon-image-id"
+        name="owm"
+      />
       <span
         class="max-temperature"
         data-testid="temperature-id"
       >
-        25
+        25℃
       </span>
       <span
         class="description"

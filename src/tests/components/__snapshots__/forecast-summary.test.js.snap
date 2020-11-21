@@ -9,19 +9,18 @@ exports[`Forecast Summary renders correctly 1`] = `
       class="date"
       data-testid="date-id"
     >
-      999
+      April 30th, 2018
     </span>
-    <span
-      class="icon"
-      data-testid="icon-id"
-    >
-      testIcon
-    </span>
+    <i
+      class="wi wi-day-sunny"
+      data-testid="icon-image-id"
+      name="owm"
+    />
     <span
       class="max-temperature"
       data-testid="temperature-id"
     >
-      68494
+      68494℃
     </span>
     <span
       class="description"

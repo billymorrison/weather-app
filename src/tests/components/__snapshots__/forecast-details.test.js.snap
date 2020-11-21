@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Forecast Details renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="forecast-details"
+  >
+    <h2
+      class="date"
+      data-testid="date-id"
+    >
+      April 30th, 2018
+    </h2>
+    <span
+      class="max-temperature"
+      data-testid="max-temperature-id"
+    >
+      Max Temperature: 11℃
+    </span>
+    <span
+      class="min-temperature"
+      data-testid="min-temperature-id"
+    >
+      Min Temperature: 4℃
+    </span>
+    <span
+      class="humidity"
+      data-testid="humidity-id"
+    >
+      Humidity: 30%
+    </span>
+    <span
+      class="wind"
+      data-testid="wind-id"
+    >
+      Wind: 13mph
+    </span>
+  </div>
+</DocumentFragment>
+`;
