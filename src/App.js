@@ -2,6 +2,7 @@ import './styles/App.css';
 import LocationDetails from './components/locationdetails'
 import ForecastSummaries from './components/forecastsummaries'
 import ForecastDetails from './components/forecastdetails'
+import SearchForm from './components/searchform'
 import { useEffect, useState } from 'react'
 import getData from './services/get-data'
 
@@ -14,8 +15,12 @@ function App() {
     country: ''
   })
 
+  const setState = (city) => {
+    getData(setLocation, setForecasts, city)
+  }
+
   useEffect(() => {
-    getData(setLocation, setForecasts)
+    setState(location.city)
   }, [])
 
   const selectedForecast = forecasts && forecasts.find(forecast => forecast.date === selectedDate)
@@ -29,6 +34,7 @@ function App() {
         city = { location.city }
         country = { location.country }
       />
+      <SearchForm onSubmit={setState}/>
       <ForecastSummaries forecasts={ forecasts } onForecastSelect={ handleForecastSelection }/>
       {
         selectedForecast && (<ForecastDetails forecast={selectedForecast} />)
