@@ -37,8 +37,8 @@ function App() {
         country = { location.country }
       />
       <SearchForm onSubmit={setState}/>
-      { searchError === 404 && <span>City not found</span> }
-      { searchError === 500 && <span>Internal server error, please contact site owner</span> }
+      { searchError === 404 && <span className='search-error'>City not found</span> }
+      { searchError === 500 && <span className='search-error'>Internal server error, please contact site owner</span> }
       
       <ForecastSummaries forecasts={ forecasts } onForecastSelect={ handleForecastSelection }/>
       {
