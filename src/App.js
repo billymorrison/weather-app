@@ -14,9 +14,11 @@ function App() {
     city: '',
     country: ''
   })
+  const [searchError, setSearchError] = useState()
 
-  const setState = (city) => {
-    getData(setLocation, setForecasts, city)
+  const setState = async (city) => {
+    const response = await getData(setLocation, setForecasts, city)
+    setSearchError(response)
   }
 
   useEffect(() => {
@@ -35,6 +37,9 @@ function App() {
         country = { location.country }
       />
       <SearchForm onSubmit={setState}/>
+      { searchError === 404 && <span>City not found</span> }
+      { searchError === 500 && <span>Internal server error, please contact site owner</span> }
+      
       <ForecastSummaries forecasts={ forecasts } onForecastSelect={ handleForecastSelection }/>
       {
         selectedForecast && (<ForecastDetails forecast={selectedForecast} />)

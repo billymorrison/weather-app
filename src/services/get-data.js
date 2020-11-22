@@ -6,7 +6,7 @@ const getData = async (locationFunction, forecastFunction, city) => {
         locationFunction(response.data.location)
         forecastFunction(response.data.forecasts)
     } catch (err) {
-        console.log(err)
+        return err.response.status 
     }
 }
 
