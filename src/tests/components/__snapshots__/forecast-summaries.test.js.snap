@@ -12,7 +12,7 @@ exports[`Forecast Summaries renders the correct amount of ForecastSummary compon
         class="date"
         data-testid="date-id"
       >
-        April 30th, 2018
+        Monday Apr 30th
       </span>
       <i
         class="wi wi-day-sunny"
@@ -42,7 +42,7 @@ exports[`Forecast Summaries renders the correct amount of ForecastSummary compon
         class="date"
         data-testid="date-id"
       >
-        April 30th, 2018
+        Monday Apr 30th
       </span>
       <i
         class="wi wi-tornado"

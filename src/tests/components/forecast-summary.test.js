@@ -10,7 +10,7 @@ describe('Forecast Summary', () => {
     it('renders correctly', () => {
         const { asFragment } = render(
             <ForecastSummary
-                date={1525046400000}
+                date={1606129635000}
                 temperature={68494}
                 description='testDesc'
                 icon='800'
@@ -24,7 +24,7 @@ describe('Forecast Summary', () => {
     it('renders a number of props into a weather summary', () => {
         const { getByText, getByTestId } = render(
             <ForecastSummary
-                date={1525046400000}
+                date={1606129635000}
                 temperature={9}
                 description='Clear'
                 icon='800'
@@ -32,8 +32,8 @@ describe('Forecast Summary', () => {
             />
         )
 
-        expect(getByText('April 30th, 2018')).toBeTruthy();
-        expect(getByText('April 30th, 2018')).toHaveClass('date');
+        expect(getByText('Monday Nov 23rd')).toBeTruthy();
+        expect(getByText('Monday Nov 23rd')).toHaveClass('date');
         expect(getByTestId('temperature-id')).toHaveClass('max-temperature');
         expect(getByText('Clear')).toHaveClass('description');
     })

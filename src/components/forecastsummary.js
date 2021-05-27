@@ -9,7 +9,7 @@ dayjs.extend(advancedFormat)
 const ForecastSummary = (props) => {
 
     const getReadableDate = (date) => {
-        return dayjs(date).format('MMMM Do, YYYY')
+        return dayjs(date).format('dddd MMM Do')
     }
 
     return (

@@ -9,7 +9,7 @@ exports[`Forecast Summary renders correctly 1`] = `
       class="date"
       data-testid="date-id"
     >
-      April 30th, 2018
+      Monday Nov 23rd
     </span>
     <i
       class="wi wi-day-sunny"
